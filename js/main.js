@@ -35,6 +35,25 @@ function toggle(event) {
     yodaImage.classList.toggle("flashy");
 }
 
+document.getElementById("force-lots-of")
+    .addEventListener("click", function () {
+        yodaImage.classList.toggle("moreforce");
+    });
+
+document.getElementById("add-border")
+    .addEventListener("click", function () {
+        yodaImage.classList.toggle("bordered");
+    });
+
+document.getElementById("starwars").addEventListener("click", (event) => {
+if (event.target.tagName.toLowerCase() === "li") {
+console.log("You have clicked on an <li> item!");
+}
+if(event.target.className == "list-item"){
+    console.log("you clicked on list-item element");
+}
+})
+
 
 
 
