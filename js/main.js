@@ -27,3 +27,25 @@ function handleClick(MouseEvent) {
 header.addEventListener("mouseover", handleHeaderMouseEvent);
 header.addEventListener("mouseout", handleHeaderMouseOut);
 
+var yodaImage = document.getElementById("theYoda");
+
+document.getElementById("change-color").addEventListener("click", toggle);
+
+function toggle(event) {
+    yodaImage.classList.toggle("flashy");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
